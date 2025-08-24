@@ -39,4 +39,9 @@ public class StoreStepdefs {
     public void elEstadoDeRespuestaEsStatusCode(int StatusCode) {
         storeService.validarStatusCode(StatusCode);
     }
+
+    @And("el campo complete es true")
+    public void elCampoCompleteEsTrue() {
+        storeService.validarCampoComplete();
+    }
 }

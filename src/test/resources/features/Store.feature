@@ -18,6 +18,7 @@ Feature: Funcionalidad Store
     Given que tengo la URL "https://petstore.swagger.io/v2/"
     When consulta la orden de compra de ID <orderId>
     Then el estado de respuesta es <StatusCode>
+    And el campo complete es true
     Examples:
       | orderId | StatusCode |
       |    5    |    200     |

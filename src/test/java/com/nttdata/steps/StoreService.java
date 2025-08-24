@@ -58,4 +58,8 @@ public class StoreService {
     public void validarStatusCode(int StatusCode) {
         restAssuredThat(response -> response.statusCode(StatusCode));
     }
+
+    public void validarCampoComplete() {
+        restAssuredThat(response -> response.body("complete", equalTo(true)));
+    }
 }
